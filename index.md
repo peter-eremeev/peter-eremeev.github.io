@@ -9,8 +9,6 @@ I'm a final-year undergraduate at UC San Diego studying mathematics and economic
 
 ## Curriculum Vitae
 
-## Curriculum Vitae
-
 <a href="peter-eremeev-cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
 
 ## Research interests
