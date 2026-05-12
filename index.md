@@ -26,6 +26,8 @@ Worked with PhD student Maddison Erbabian on a project studying spillover effect
 
 ## Contact
 - Email: [peremeev@ucsd.edu](mailto:peremeev@ucsd.edu)
-- LinkedIn: <a href="https://www.linkedin.com/in/peter-eremeev/" target="_blank" rel="noopener">Peter Eremeev</a>---
+- LinkedIn: <a href="https://www.linkedin.com/in/peter-eremeev/" target="_blank" rel="noopener">Peter Eremeev</a>
+
+---
 
 *Last updated: May 2026*
