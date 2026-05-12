@@ -5,7 +5,7 @@ I'm a final-year undergraduate at UC San Diego studying mathematics and economic
 
 ## Curriculum Vitae
 
-<a href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+<a href="peter-eremeev-cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
 
 ## Research interests
 time series econometrics, nonparametric methods, macroeconomics
