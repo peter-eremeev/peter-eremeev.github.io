@@ -1,7 +1,5 @@
 # Peter Eremeev
 
-<img src="profile.jpg" alt="Peter Eremeev" style="width: 190px; border-radius: 12px;">
-
 ## About
 I'm a final-year undergraduate at UC San Diego studying mathematics and economics. I'm currently writing my honors thesis with <a href="https://mathweb.ucsd.edu/~daz076/">Danna Zhang</a> on nonparametric tests for stationarity. In Fall 2026 I'll start the MSc Econometrics and Mathematical Economics at LSE.
 
