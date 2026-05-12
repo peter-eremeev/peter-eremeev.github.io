@@ -21,7 +21,7 @@ B.S. Joint Major in Mathematics and Economics, University of California San Dieg
 ## Experience
 Research Assistant, [The Economic Research Lab](https://economics.ucsd.edu/undergraduate-program/resources/undergraduate-graduate-research-lab/index.html), UC San Diego, March–June 2025 
 
-Worked with PhD student Maddison Erbabian on a project studying spillover effects of higher education in the developing world. Built a Python pipeline for automated geo-coordinate scraping and constructed a database with crosswalks to IPUMS.
+Worked with PhD student Maddison Erbabian on a project studying spillover effects of higher education in the developing world. Built a Python pipeline for automated geo-coordinate scraping and constructed a database with crosswalks to household microdata.
 
 ## Contact
 - Email: [peremeev@ucsd.edu](mailto:peremeev@ucsd.edu)
