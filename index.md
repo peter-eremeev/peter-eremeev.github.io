@@ -5,7 +5,7 @@ I'm a final-year undergraduate at UC San Diego studying mathematics and economic
 
 ## Curriculum Vitae
 
-[Download CV (PDF)](peter-eremeev-cv.pdf){:target="_blank"}
+<a href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
 
 ## Research interests
 time series econometrics, nonparametric methods, macroeconomics
@@ -26,8 +26,7 @@ Worked with PhD student Maddison Erbabian on a project studying spillover effect
 
 ## Contact
 - Email: [peremeev@ucsd.edu](mailto:peremeev@ucsd.edu)
-- LinkedIn: [Peter Eremeev](https://www.linkedin.com/in/peter-eremeev/)
-
+- LinkedIn: <a href="https://www.linkedin.com/in/peter-eremeev/" target="_blank" rel="noopener">Peter Eremeev</a>
 ---
 
 *Last updated: May 2026*
