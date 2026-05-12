@@ -17,7 +17,6 @@ I develop a nonparametric test for stationarity based on the spectral density. T
 
 ## Education
 B.S. Joint Major in Mathematics and Economics, University of California San Diego, 2024-2026
-- Relevant Coursework: Real Analysis, Statistics, Probability, Stochastic Processes, Linear Algebra
 
 ## Experience
 Research Assistant, [The Economic Research Lab](https://economics.ucsd.edu/undergraduate-program/resources/undergraduate-graduate-research-lab/index.html), UC San Diego, March–June 2025 
