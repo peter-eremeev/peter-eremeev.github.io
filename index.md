@@ -1,7 +1,7 @@
 # Peter Eremeev
 
 ## About
-I'm a final-year undergraduate at UC San Diego studying mathematics and economics. I'm currently writing my honors thesis with [Danna Zhang](link) on nonparametric tests for stationarity. In Fall 2026 I'll start the MSc Econometrics and Mathematical Economics at LSE.
+I'm a final-year undergraduate at UC San Diego studying mathematics and economics. I'm currently writing my honors thesis with [Danna Zhang](https://mathweb.ucsd.edu/~daz076/) on nonparametric tests for stationarity. In Fall 2026 I'll start the MSc Econometrics and Mathematical Economics at LSE.
 
 ## Curriculum Vitae
 
@@ -11,7 +11,7 @@ I'm a final-year undergraduate at UC San Diego studying mathematics and economic
 time series econometrics, nonparametric methods, macroeconomics
 
 ## Research
-Honors Thesis: Nonparametric Spectral Tests for Stationarity in Nonlinear Time Series. Advised by [Danna Zhang](https://mathweb.ucsd.edu/~daz076/).
+Honors Thesis: <a href="peter-eremeev-thesis.pdf" target="_blank" rel="noopener">Nonparametric Spectral Tests for Stationarity in Nonlinear Time Series [DRAFT]</a>. Advised by [Danna Zhang](https://mathweb.ucsd.edu/~daz076/).
 
 I develop a nonparametric test for stationarity based on the spectral density. The test accommodates nonlinear, non-Gaussian data-generating processes, and retains power against smoothly time-varying alternatives.
 
