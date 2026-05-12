@@ -3,6 +3,10 @@
 ## About
 I'm a final-year undergraduate at UC San Diego studying mathematics and economics. I'm currently writing my honors thesis with [Danna Zhang](link) on nonparametric tests for stationarity. In Fall 2026 I'll start the MSc Econometrics and Mathematical Economics at LSE.
 
+## Curriculum Vitae
+
+[Download CV (PDF)](peter-eremeev-cv.pdf){:target="_blank"}
+
 ## Research interests
 time series econometrics, nonparametric methods, macroeconomics
 
