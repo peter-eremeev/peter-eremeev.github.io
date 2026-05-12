@@ -1,6 +1,5 @@
 # Peter Eremeev
 
-## About
 <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 30px;">
   
   <div style="flex: 1;">
