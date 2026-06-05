@@ -11,7 +11,7 @@ I'm a final-year undergraduate at UC San Diego studying mathematics and economic
 time series econometrics, nonparametric methods, macroeconomics
 
 ## Research
-Honors Thesis: <a href="peter-eremeev-thesis.pdf" target="_blank" rel="noopener">Nonparametric Spectral Tests for Stationarity in Nonlinear Time Series [DRAFT]</a>. Advised by [Danna Zhang](https://mathweb.ucsd.edu/~daz076/).
+Honors Thesis: <a href="peter-eremeev-thesis.pdf" target="_blank" rel="noopener">Nonparametric Spectral Tests for Stationarity in Nonlinear Time Series</a>. Advised by [Danna Zhang](https://mathweb.ucsd.edu/~daz076/).
 
 I develop a nonparametric test for stationarity based on the spectral density. The test accommodates nonlinear, non-Gaussian data-generating processes, and retains power against smoothly time-varying alternatives.
 
