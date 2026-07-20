@@ -1,0 +1,495 @@
+/* CSS VARIABLES FOR LIGHT THEME (DEFAULT) */
+/* These variables define colors for the light theme */
+:root {
+  --bg-color: #fff;                    /* Background color (white) */
+  --text-color: #070000;               /* Main text color (almost black) */
+  --heading-color: #222;               /* Main heading color (dark gray) */
+  --heading-2-color: #393939;          /* Secondary heading color */
+  --heading-3-color: #494949;          /* Tertiary heading color */
+  --link-color: #800000;               /* Link color (maroon) */
+  --link-hover-color: #600000;         /* Link color when hovering (darker maroon) */
+  --border-color: #e5e5e5;             /* Border color (light gray) */
+  --code-bg: #f8f8f8;                  /* Code background color (very light gray) */
+  --code-color: #333;                  /* Code text color */
+  --header-bg: #f4f4f4;                /* Header background color */
+  --header-border: #e0e0e0;            /* Header border color */
+  --strong-color: #222;                /* Bold text color */
+  --dt-color: #444;                    /* Definition term color */
+  --collapse-hover: #ad95ae;           /* Collapse button hover color (purple-ish) */
+}
+
+/* CSS VARIABLES FOR DARK THEME */
+/* When dark mode is active, these color values replace the light theme colors */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;                 /* Background color (very dark gray) */
+  --text-color: #e0e0e0;               /* Main text color (light gray) */
+  --heading-color: #f0f0f0;            /* Main heading color (very light gray) */
+  --heading-2-color: #d0d0d0;          /* Secondary heading color */
+  --heading-3-color: #c0c0c0;          /* Tertiary heading color */
+  --link-color: #c08080;               /* Link color (light maroon/rose) */
+  --link-hover-color: #d09090;         /* Link color when hovering (lighter rose) */
+  --border-color: #404040;             /* Border color (medium gray) */
+  --code-bg: #2a2a2a;                  /* Code background color (dark gray) */
+  --code-color: #e0e0e0;               /* Code text color (light gray) */
+  --header-bg: #252525;                /* Header background color */
+  --header-border: #404040;            /* Header border color */
+  --strong-color: #f0f0f0;             /* Bold text color */
+  --dt-color: #d0d0d0;                 /* Definition term color */
+  --collapse-hover: #8b6f8d;           /* Collapse button hover color */
+}
+
+/* BODY - Main page styling */
+body {
+  background-color: var(--bg-color);  /* Use theme background color */
+  padding:50px;
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--text-color);           /* Use theme text color */
+  font-weight:400;
+  transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth color transitions when switching themes */
+}
+
+/* HEADINGS - All heading levels */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  margin:0 0 20px;
+}
+
+/* SPACING - Common elements get bottom margin */
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
+/* LINE HEIGHT - Tighter for headings */
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+/* H1 - Main heading (name) */
+h1 {
+  font-size:28px;
+  font-weight: 500;
+}
+
+/* H2 - Section headings (Working Papers, etc.) */
+h2 {
+  color: var(--heading-2-color);
+  font-size:20px;
+  font-weight: 500;
+}
+
+/* H3-H6 - Smaller headings */
+h3, h4, h5, h6 {
+  color: var(--heading-3-color);
+  font-weight: 500;
+}
+
+/* LINKS - Default link styling */
+a {
+  color: var(--link-color);           /* Maroon in light mode, light maroon in dark mode */
+  text-decoration:none;                /* No underline */
+}
+
+/* LINKS ON HOVER - When mouse is over a link */
+a:hover {
+  color: var(--link-hover-color);     /* Darker maroon on hover */
+}
+
+/* SMALL LINKS - Smaller text within links */
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.3em;
+  display:block;
+}
+
+a:hover small {
+  color:#777;
+}
+
+/* WRAPPER - Main content container (centers the page) */
+.wrapper {
+  width:950px;
+  margin:0 auto;
+}
+
+/* BLOCKQUOTE - For quoted text */
+blockquote {
+  border-left:1px solid var(--border-color);
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+/* CODE - Inline code and code blocks */
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color: var(--code-color);
+}
+
+/* PRE - Code blocks */
+pre {
+  padding:8px 20px;
+  background: var(--code-bg);
+  border-radius:5px;
+  border:1px solid var(--border-color);
+  overflow-x: auto;
+}
+
+/* TABLES */
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+/* TABLE CELLS */
+th, td {
+  text-align:justify;
+  padding:5px 10px;
+  border-bottom:1px solid var(--border-color);
+}
+
+/* DEFINITION TERM - For definition lists */
+dt {
+  color: var(--dt-color);
+  font-weight:500;
+}
+
+/* TABLE HEADERS */
+th {
+  color: var(--dt-color);
+}
+
+/* IMAGES - Responsive images */
+img {
+  max-width:100%;
+}
+
+/* LEFT-SIDE - Left sidebar with name and photo */
+left-side {
+  width:320px;
+  float:left;
+  position:absolute;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+/* CONTACT LINKS - Icons below photo */
+.contact-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.contact-links a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--link-color);
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: var(--header-bg);
+  color: var(--link-hover-color);
+}
+
+/* LEFT-SIDE NAVIGATION - Button list (not used in current page) */
+left-side ul {
+  list-style:none;
+  height:40px;
+  padding:0;
+  background: var(--header-bg);
+  border-radius:5px;
+  border:1px solid var(--header-border);
+  width:270px;
+}
+
+left-side li {
+  width:89px;
+  float:left;
+  border-right:1px solid var(--header-border);
+  height:40px;
+}
+
+left-side li:first-child a {
+  border-radius:5px 0 0 5px;
+}
+
+left-side li:last-child a {
+  border-radius:0 5px 5px 0;
+}
+
+left-side ul a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+  padding-top:6px;
+  height:34px;
+}
+
+left-side ul a:hover {
+  color:#999;
+}
+
+left-side ul a:active {
+  background-color:#f0f0f0;
+}
+
+/* STRONG/BOLD TEXT */
+strong {
+  color: var(--strong-color);
+  font-weight:500;
+}
+
+left-side ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+left-side ul a strong {
+  font-size:14px;
+  display:block;
+  color: var(--strong-color);
+}
+
+/* RIGHT-SIDE - Main content area (right side) */
+right-side {
+  width:550px; /* Width of main content area */
+  float:right;
+  padding-bottom:50px;
+}
+
+/* SMALL TEXT */
+small {
+  font-size:11px;
+}
+
+/* MEDIUM-SMALL TEXT - Between regular and small */
+.medium-small {
+  font-size:13px;
+}
+
+/* HORIZONTAL RULE - Line separator */
+hr {
+  border:0;
+  background: var(--border-color);
+  height:1px;
+  margin:0 0 20px;
+}
+
+/* FOOTER - Credits at bottom of sidebar */
+footer {
+  width:320px;
+  position:absolute;
+  bottom:0px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+/* RESPONSIVE DESIGN - Tablet size (960px and smaller) */
+@media print, screen and (max-width: 960px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+
+  left-side, right-side, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+
+  left-side {
+    padding-right:320px;
+  }
+
+  right-side {
+    border:1px solid var(--border-color);
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+
+  left-side a small {
+    display:inline;
+  }
+
+  left-side ul {
+    position:absolute;
+    right:50px;
+    top:52px;
+  }
+}
+
+/* RESPONSIVE DESIGN - Small tablet/large phone (720px and smaller) */
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+
+  left-side {
+    padding:0;
+  }
+
+  left-side ul, left-side p.view {
+    position:static;
+  }
+
+  pre, code {
+    word-wrap:normal;
+  }
+}
+
+/* RESPONSIVE DESIGN - Mobile phone (480px and smaller) */
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+
+  left-side ul {
+    width:99%;
+  }
+
+  left-side li, left-side ul li + li + li {
+    width:33%;
+  }
+}
+
+/* PRINT STYLES - When printing the page */
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
+}
+
+/* Styles for the collapsible "Abstract" buttons */
+.collapse {
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* How the buttons look when active or when you hover over them */
+.active,
+.collapse:hover {
+    background-color: var(--collapse-hover);
+}
+
+/* Hidden text for collapsible abstracts */
+.text {
+    display: none;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* Dark/Light mode toggle switch - container */
+.switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 20px;
+    z-index: 1000;
+}
+
+/* Hide the actual checkbox input (we use a custom slider instead) */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The sliding background track */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    transition: 0.3s;
+}
+
+/* The white circle that slides left/right */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* When the switch is ON (dark mode), change background to maroon */
+input:checked + .slider {
+    background-color: #800000;
+}
+
+/* When the switch is ON, move the circle to the right */
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Make the slider track rounded */
+.slider.round {
+    border-radius: 20px;
+}
+
+/* Make the sliding circle rounded */
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Barra superior fija */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5px 40px 5px; /* top | right | bottom | left */
+    z-index: 1000;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Ajuste del título para no solaparse */
+.top-bar h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Coloca el toggle a la derecha */
+.top-bar .switch {
+	margin-top:32px;
+    position: absolute;
+    right: 20px;
+}
+
+
+.wrapper {
+    padding-top: 80px; /* ajusta según la altura de la barra */
+}
+
+/* Tema claro */
+:root[data-theme='light'] {
+    --background: #ffffff;
+    --text: #000000;
+}
+
+/* Tema oscuro */
+:root[data-theme='dark'] {
+   --background: #1a1a1a;
+    --text: #f0f0f0;
+}

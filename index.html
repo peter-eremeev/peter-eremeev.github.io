@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- This section contains metadata and settings for the webpage -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title> Peter </title>
+		<!-- Link to external CSS files that control the appearance of the page -->
+		<link rel="stylesheet" href="stylesheets/styles.css">
+		<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+		<!-- Bootstrap Icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<meta name="viewport" content="width=device-width">
+	</head>
+	<body>
+
+		<!-- Fixed top bar with name (center) and dark/light toggle (right) -->
+		<div class="top-bar">
+			<h1 id="name">Peter [Surname]</h1>
+			<label class="switch">
+				<input type="checkbox" id="themeToggle">
+				<span class="slider round"></span>
+			</label>
+		</div>
+
+		<!-- Main content wrapper -->
+		<div class="wrapper" style="padding-top: 70px;">
+			<hr>
+			<!-- Left sidebar with photo and links -->
+			<left-side>
+				<img src="files/images/peter.jpg">
+
+				<!-- Social/Contact Links -->
+				<div class="contact-links">
+					<a href="files/cv/peter_cv.pdf" target="_blank" title="Download CV">
+						CV
+					</a>
+					<a href="https://x.com/YOUR_HANDLE" target="_blank" title="X (Twitter)">
+						<i class="bi bi-twitter-x"></i>
+					</a>
+					<a href="https://github.com/YOUR_HANDLE" target="_blank" title="GitHub">
+						<i class="bi bi-github"></i>
+					</a>
+				</div>
+
+				<p></p>
+
+			</left-side>
+
+			<!-- Main content section on the right -->
+			<right-side>
+
+				<p>I'm an undergraduate at <a href="https://ucsd.edu" target="_blank">UC San Diego</a>, completing a joint B.S. in Mathematics and Economics as part of the Mathematics Honors Program.</p>
+
+				<p>My research interests include Econometrics, Time-Series Analysis, and Macroeconomics.</p>
+
+				<p>In Fall 2026 I will begin the <a href="https://www.lse.ac.uk/economics" target="_blank">MSc in Econometrics and Mathematical Economics</a> at the London School of Economics. My longer-term goal is a PhD in econometrics.</p>
+
+				<p>You can contact me at <a href="mailto:firstname.lastname@example.com">firstname.lastname@example.com</a></p>
+
+				<hr>
+
+				<!-- Section: Research -->
+				<h2 id="research">Research</h2>
+
+				<ul>
+					<li> "Testing for Second-Order Stationarity in Nonlinear Locally Stationary Processes" <span class="medium-small">(Undergraduate Honors Thesis, advised by Danna Zhang)</span> [<a href="files/papers/peter_thesis.pdf" target="_blank">PDF</a>]</li>
+
+					<!-- Button to show/hide the abstract -->
+					<button type="button" class="collapse">
+						Abstract
+					</button>
+					<!-- Hidden abstract text (shown when button is clicked) -->
+					<div class="text">
+						This is an abstract.
+					</div>
+				</ul>
+
+				<p></p>
+
+				<!-- Section: Work in Progress (optional — delete if unused) -->
+				<!--
+				<h2 id="progress"> Work in Progress</h2>
+
+				<ul>
+					<li> "Paper Title" <span class="medium-small">with Coauthor</span> [<a href="#" target="_blank">Slides</a>] </li>
+					<button type="button" class="collapse">
+						Abstract
+					</button>
+					<div class="text">
+						Abstract goes here.
+					</div>
+				</ul>
+				-->
+
+			</right-side>
+
+		</div>
+
+		<!-- External JavaScript file for responsive design (optional; from the theme) -->
+		<!-- <script src="javascripts/scale.fix.js"></script> -->
+
+	<script>
+		/* COLLAPSIBLE ABSTRACTS FUNCTIONALITY */
+		var btns = document.getElementsByClassName("collapse");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+
+		/* DARK/LIGHT THEME TOGGLE FUNCTIONALITY */
+		const themeToggle = document.getElementById('themeToggle');
+		const html = document.documentElement;
+
+		let currentTheme = 'light';
+		try { currentTheme = localStorage.getItem('theme') || 'light'; } catch (e) {}
+
+		html.setAttribute('data-theme', currentTheme);
+		themeToggle.checked = currentTheme === 'dark';
+
+		themeToggle.addEventListener('change', function() {
+			const newTheme = this.checked ? 'dark' : 'light';
+			html.setAttribute('data-theme', newTheme);
+			try { localStorage.setItem('theme', newTheme); } catch (e) {}
+		});
+	</script>
+
+</body>
+</html>
