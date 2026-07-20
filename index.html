@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-theme="dark">
 	<head>
 		<!-- This section contains metadata and settings for the webpage -->
 		<meta charset="utf-8">
@@ -14,13 +14,9 @@
 	</head>
 	<body>
 
-		<!-- Fixed top bar with name (center) and dark/light toggle (right) -->
+		<!-- Fixed top bar with name (center) -->
 		<div class="top-bar">
 			<h1 id="name">Peter Eremeev</h1>
-			<label class="switch">
-				<input type="checkbox" id="themeToggle">
-				<span class="slider round"></span>
-			</label>
 		</div>
 
 		<!-- Main content wrapper -->
@@ -111,22 +107,6 @@
 				}
 			});
 		}
-
-		/* DARK/LIGHT THEME TOGGLE FUNCTIONALITY */
-		const themeToggle = document.getElementById('themeToggle');
-		const html = document.documentElement;
-
-		let currentTheme = 'light';
-		try { currentTheme = localStorage.getItem('theme') || 'light'; } catch (e) {}
-
-		html.setAttribute('data-theme', currentTheme);
-		themeToggle.checked = currentTheme === 'dark';
-
-		themeToggle.addEventListener('change', function() {
-			const newTheme = this.checked ? 'dark' : 'light';
-			html.setAttribute('data-theme', newTheme);
-			try { localStorage.setItem('theme', newTheme); } catch (e) {}
-		});
 	</script>
 
 </body>
